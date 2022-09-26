@@ -12,6 +12,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>17</maven.compiler.release>
         <slf4j.version>1.7.36</slf4j.version>
+        <jackson.version>2.13.3</jackson.version>
     </properties>
     <dependencies>
 
@@ -26,7 +27,16 @@
             <version>${slf4j.version}</version>
             <scope>runtime</scope>
         </dependency>
-
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
 
     </dependencies>
 
