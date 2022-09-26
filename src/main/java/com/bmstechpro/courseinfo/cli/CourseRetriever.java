@@ -32,6 +32,6 @@ public class CourseRetriever {
         LOG.info("Retrieving courses for author '{}'", authorId);
         CourseRetrievalService courseRetrievalService = new CourseRetrievalService();
         List<PluralsightCourse> coursesToStore = courseRetrievalService.getCoursesFor(authorId);
-        LOG.info("Retrieved the following courses '{}'", coursesToStore);
+        LOG.info("Retrieved the following {} courses '{}'", coursesToStore.size(), coursesToStore);
     }
 }
